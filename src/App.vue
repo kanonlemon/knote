@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Layout>
+    <Content><TaskQuadrants msg="Welcome to Your Vue.js App"/></Content>
+  </Layout>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TaskQuadrants from './components/TaskQuadrants.vue'
+import {Layout , Content } from 'tdesign-vue-next'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Layout,  Content,
+    TaskQuadrants
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+layout {
+ height: 100px;
 }
 </style>
